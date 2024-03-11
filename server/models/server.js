@@ -37,7 +37,7 @@ class Server {
         path.join(__dirname, "../../client/build/index.html")
       );
       */
-      res.send("<h1>Hello, This is API Back-end008.</h1>");
+      res.send("<h1>Hello, This is API Back-end.</h1>");
     });
     // Catch all requests that don't match any route
     // this.app.get("*", (req, res) => {
