@@ -22,7 +22,7 @@ const login = async (req, res = response) => {
 
     if (user.length > 0) {
 
-      if (password !== user[0].login_password) {
+      if (password !== user[0].password) {
         return res.status(400).json({
           msg: "User / Password are incorrect",
         });
@@ -51,4 +51,3 @@ const login = async (req, res = response) => {
 module.exports = {
   login,
 };
-
